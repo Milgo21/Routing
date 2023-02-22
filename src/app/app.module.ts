@@ -1,14 +1,33 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
+
+const appRoutes: Routes = [
+  {path:'',component: HomeComponent},
+  {path:'Home',component: HomeComponent},
+  {path:'About',component: AboutComponent},
+  {path:'Contact',component: ContactComponent},
+  {path:'**',component: PagenotfoundComponent}
+
+]
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    AboutComponent,
+    ContactComponent,
+    PagenotfoundComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

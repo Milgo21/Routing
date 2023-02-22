@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background-color: coral;
+  height: 3rem;
+  align-items: center;
+}
+a{
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 0.5rem;
+}
+a:hover{
+  background-color: red;
+}
