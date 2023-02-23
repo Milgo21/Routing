@@ -1,0 +1,32 @@
+.albums-container{
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+.imageurl{
+  height: 150px;
+  width: 150px;
+}
+button{
+  background-color: coral;
+  border: none;
+  color: white;
+  padding: 5px;
+}
+button:hover{
+  cursor: pointer;
+}
+.container{
+  width: 90vw;
+  margin-top: 1rem;
+}
+.imagescontainer{
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+}
+.albums{
+  /* display: flex; */
+  gap: 10px;
+  flex-wrap: wrap;
+}

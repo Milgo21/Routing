@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Album } from '../interface';
+import { ProductsService } from '../products.service';
 
 @Component({
   selector: 'app-contact',
@@ -7,4 +9,8 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
 
+  Albums:Album[]=[];
+  constructor( private service:ProductsService){
+    this.Albums = this.service.Albums
+  }
 }

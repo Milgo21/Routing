@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { OnealbumComponent } from './contact/onealbum/onealbum.component';
 
 
 const appRoutes: Routes = [
@@ -14,6 +15,7 @@ const appRoutes: Routes = [
   {path:'Home',component: HomeComponent},
   {path:'About',component: AboutComponent},
   {path:'Contact',component: ContactComponent},
+  {path:'Contact/title/:id',component: OnealbumComponent},
   {path:'**',component: PagenotfoundComponent}
 
 ]
@@ -23,7 +25,8 @@ const appRoutes: Routes = [
     HomeComponent,
     AboutComponent,
     ContactComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    OnealbumComponent
   ],
   imports: [
     BrowserModule,

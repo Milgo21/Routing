@@ -1,1 +1,13 @@
-<p>contact works!</p>
+<div class="albums-container">
+
+  <div class="albums">
+      <div class="container" *ngFor="let a of Albums">
+          <div class="imagescontainer">
+            <img class="imageurl"src="{{a.url}}" alt="">
+            <img src="{{a.thumbnailUrl}}" alt="">
+          </div>
+        <button routerLink="/Contact/title/{{a.id}}">See more</button>
+        <p>{{a.title}}</p>
+      </div>
+  </div>
+</div>
